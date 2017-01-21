@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sobmad.com.gamingreminder" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Permission to use AlarmManager -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".Main.GamingReminder"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GamePage.PageActivity"
+            android:label="@string/title_activity_page" >
+        </activity>
+        <activity
+            android:name=".GamePage.VideoActivity"
+            android:label="@string/title_activity_video"
+            android:parentActivityName=".GamePage.PageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sobmad.com.gamingreminder.GamePage.PageActivity" />
+        </activity>
+        <activity
+            android:name=".GamePage.TagsFilterActivity"
+            android:label="@string/title_activity_tags_filter" >
+        </activity>
+
+        <receiver
+            android:name=".Notification.AlarmManagerBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="37540a1cb8ce8beb079cc22119381af99fc43293" />
+
+        <activity
+            android:name=".Settings.SettingsActivityApp"
+            android:label="@string/title_activity_settings_activity_app"
+            android:parentActivityName=".Main.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sobmad.com.gamingreminder.Main.MainActivity" />
+        </activity>
+
+        <service android:name=".Notification.AlarmService" />
+
+        <activity
+            android:name=".Main.IntroLaunchActivity"
+            android:label="@string/title_activity_intro_launch" >
+        </activity>
+        <activity
+            android:name=".Main.AppIntroActivity"
+            android:label="@string/title_activity_app_intro" >
+        </activity>
+    </application>
+
+</manifest>

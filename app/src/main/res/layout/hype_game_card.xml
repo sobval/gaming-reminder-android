@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:background="#d7000000"
+                android:id="@+id/main_layout">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="120dp"
+                    android:layout_height="185dp"
+                    android:layout_margin="5dp"
+                    android:background="#d7000000"
+                    android:id="@+id/card_layout">
+
+        <TextView
+            android:padding="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Uncharted 4: A Thief&apos;s End"
+            android:id="@+id/gameTitle"
+            android:layout_gravity="center_horizontal"
+            android:textSize="10dp"
+            android:textColor="@android:color/background_light"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:layout_below="@+id/coverview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:id="@+id/view"
+            android:layout_above="@+id/genreView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:maxLines="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20/1/2015"
+            android:id="@+id/releaseDate"
+            android:textSize="10.5dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:id="@+id/coverview"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/releaseDate"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Strategy Role Playing"
+            android:layout_marginBottom="5dp"
+            android:textSize="10dp"
+            android:textColor="#ffffffff"
+            android:id="@+id/genreView"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llExpandArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/card_layout"
+        android:layout_toEndOf="@+id/card_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder not set, set Reminder? Set A Reminder"
+            android:gravity="center"
+            android:id="@+id/textViewReminder"
+            android:textSize="11dp"
+            android:textColor="#ffffffff"
+            android:padding="10dp"
+            android:layout_above="@+id/to_game_page"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View game&apos;s page"
+            android:id="@+id/to_game_page"
+            android:textSize="11dp"
+            android:textColor="#ffffffff"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Game / Reminder"
+            android:id="@+id/delete_game"
+            android:layout_marginTop="21dp"
+            android:textSize="11dp"
+            android:textColor="#ffffffff"
+            android:padding="10dp"
+            android:layout_below="@+id/to_game_page"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

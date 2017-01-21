@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="sobmad.com.gamingreminder.Main.HypedFragment">
+
+    <TextView
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:gravity="center_vertical"
+          android:paddingLeft="16dp"
+          android:singleLine="true"
+          android:textAllCaps="true"
+          android:background="@android:color/holo_blue_dark"
+          android:textSize="12sp"
+          android:id="@+id/section_text"
+          android:textStyle="bold"
+          android:text="Hyped Games "
+          android:textColor="#ffffffff"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="48dp"
+        android:id="@+id/recyclerview_hypedGames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff191919">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</FrameLayout>

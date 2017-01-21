@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingBottom="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:paddingLeft="10dp"
+              android:clickable="true">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        class="com.google.android.youtube.player.YouTubeThumbnailView"
+        android:id="@+id/thumbnail_view"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_marginTop="9dp"
+        android:id="@+id/videoTitleTxtView"
+        android:text="Trailer #1"
+        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:textColor="@android:color/black"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Youtube Video"
+        android:id="@+id/titleCredit"
+        android:textSize="11dp"
+        android:layout_below="@+id/videoTitleTxtView"
+        android:layout_alignLeft="@+id/videoTitleTxtView"
+        android:layout_alignStart="@+id/videoTitleTxtView"
+        android:textColor="@android:color/darker_gray"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/play_button"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/thumbnail_view"
+        android:layout_alignStart="@+id/thumbnail_view"/>
+</RelativeLayout>

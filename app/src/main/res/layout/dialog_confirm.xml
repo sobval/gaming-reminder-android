@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Delete Game?"
+        android:textSize="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="#ffffffff"/>
+
+    <TextView
+        android:layout_below="@+id/dialog_title"
+        android:text="Delete Reminder?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="10dp"
+        android:textSize="11dp"
+        android:id="@+id/delete_text"
+        android:textColor="#ff171717"/>
+
+    <LinearLayout
+
+        android:id="@+id/layoutDialog"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/delete_text">
+
+        <Button
+            android:textSize="13dp"
+            android:id="@+id/dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:text="Cancel"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="#ffffffff"
+            />
+
+        <Button
+            android:textSize="13dp"
+            android:id="@+id/dialog_set"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:text="OK"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="#ffffffff"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

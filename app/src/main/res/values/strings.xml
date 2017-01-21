@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Gaming Reminder</string>
+
+    <string name="title_section1">Upcoming</string>
+    <string name="title_section2">Watchlist</string>
+    <string name="title_section3">Filters</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_page">PageActivity</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_tags_filter">TagsFilterActivity</string>
+    <string name="title_activity_settings_activity_device">SettingsActivityDevice</string>
+    <string name="title_activity_settings_activity_app">SettingsActivityApp</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="title_activity_intro_screen">IntroScreenActivity</string>
+    <string name="title_activity_intro_launch">IntroLaunchActivity</string>
+    <string name="title_activity_app_intro">AppIntroActivity</string>
+</resources>

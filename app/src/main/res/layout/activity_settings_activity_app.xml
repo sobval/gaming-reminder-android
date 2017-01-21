@@ -1,0 +1,370 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="insideOverlay"
+            android:id="@+id/scroll_view">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="sobmad.com.gamingreminder.Settings.SettingsActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:background="@android:color/holo_blue_dark"
+            android:textSize="12sp"
+            android:id="@+id/image_section_text"
+            android:textStyle="bold"
+            android:text="Image Pre-Fetch"
+            android:textColor="#ffffffff"/>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/image_section_text"
+                        tools:context="sobmad.com.gamingreminder.Settings.SettingsActivity"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/image_clear_cache"
+            >
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/clear_text_view"
+                android:text="Clear Image Cache "
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete all images in cache"
+                android:id="@+id/clear_more_info"
+                android:layout_below="@+id/clear_text_view"
+                android:textSize="13dp"/>
+        </RelativeLayout>
+
+        <!--
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/image_clear_cache"
+                        tools:context="sobmad.com.gamingreminder.Settings.SettingsActivity"
+                        android:clickable="true"
+                        android:background="@android:color/background_light"
+                        android:id="@+id/image_size">
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quality_text_view"
+                android:text="Image Quality "
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change screenshots resolution"
+                android:id="@+id/quality_more_info"
+                android:layout_below="@+id/quality_text_view"
+                android:textSize="13dp"/>
+
+            <Spinner
+                android:layout_marginBottom="15dp"
+                android:textColor="#FF0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_spinner"
+                android:spinnerMode="dropdown"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/quality_more_info"
+                android:layout_toEndOf="@+id/quality_more_info"
+                android:layout_marginLeft="51dp"
+                android:layout_marginStart="51dp"/>
+
+
+        </RelativeLayout>
+        -->
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/image_clear_cache"
+                        tools:context="sobmad.com.gamingreminder.Settings.SettingsActivity"
+                        android:clickable="true"
+                        android:background="@android:color/background_light"
+                        android:id="@+id/cover_image_size">
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cover_text_view"
+                android:text="Cover Image Quality "
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change cover resolution"
+                android:id="@+id/cover_more_info"
+                android:layout_below="@+id/cover_text_view"
+                android:textSize="13dp"/>
+
+            <Spinner
+                android:layout_marginBottom="15dp"
+                android:textColor="#FF0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cover_spinner"
+                android:spinnerMode="dropdown"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/cover_more_info"
+                android:layout_marginLeft="90dp"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/cover_image_size"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:background="@android:color/holo_blue_dark"
+            android:textSize="12sp"
+            android:id="@+id/appearance_section_text"
+            android:textStyle="bold"
+            android:text="Appearance"
+            android:textColor="#ffffffff"/>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/appearance_section_text"
+                        tools:context="sobmad.com.gamingreminder.Settings.SettingsActivity"
+                        android:clickable="true"
+                        android:background="@android:color/background_light"
+                        android:id="@+id/appearance_theme">
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/theme_text_view"
+                android:text="App Theme"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switch on for light theme"
+                android:id="@+id/theme_more_info"
+                android:layout_below="@+id/theme_text_view"
+                android:textSize="13dp"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch_theme"
+                android:layout_marginRight="47dp"
+                android:layout_marginEnd="47dp"
+                android:background="#ffffffff"
+                android:checked="false"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/appearance_theme"
+                        tools:context="sobmad.com.gamingreminder.Settings.SettingsActivity"
+                        android:clickable="true"
+                        android:background="@android:color/background_light"
+                        android:id="@+id/text_size">
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtsize_text_view"
+                android:text="Text Size"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change text size for game card layout"
+                android:id="@+id/txtsize_more_info"
+                android:layout_below="@+id/txtsize_text_view"
+                android:textSize="13dp"/>
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                android:layout_alignTop="@+id/txtsize_text_view"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/txtsize_more_info"
+                android:layout_toEndOf="@+id/txtsize_more_info"
+                android:indeterminate="false"
+                android:max="4"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/text_size"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:background="@android:color/holo_blue_dark"
+            android:textSize="12sp"
+            android:id="@+id/contact_us_section"
+            android:textStyle="bold"
+            android:text="Get in touch"
+            android:textColor="#ffffffff"/>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/contact_us_section"
+                        tools:context="sobmad.com.gamingreminder.Settings.SettingsActivity"
+                        android:clickable="true"
+                        android:background="#ffffffff"
+                        android:id="@+id/rate_app">
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rate_app_text_view"
+                android:text="Rate App"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update or give rating"
+                android:id="@+id/rate_app_more_info"
+                android:layout_below="@+id/rate_app_text_view"
+                android:textSize="13dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/rate_app"
+                        tools:context="sobmad.com.gamingreminder.Settings.SettingsActivity"
+                        android:clickable="true"
+                        android:background="#ffffffff"
+                        android:id="@+id/igdb_contact">
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/igdb_text_view"
+                android:text="IGDB.com"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game information was freely provided by IGDB.com."
+                android:id="@+id/igdb_more_info"
+                android:layout_below="@+id/igdb_text_view"
+                android:textSize="13dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/igdb_contact"
+                        tools:context="sobmad.com.gamingreminder.Settings.SettingsActivity"
+                        android:clickable="true"
+                        android:background="#ffffffff"
+                        android:id="@+id/contact_us"
+                        android:layout_marginBottom="2dp">
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_text_view"
+                android:text="Contact "
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback and suggestions"
+                android:id="@+id/contact_more_info"
+                android:layout_below="@+id/contact_text_view"
+                android:textSize="13dp"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
